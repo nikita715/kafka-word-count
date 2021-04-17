@@ -1,0 +1,11 @@
+{
+  "name": "quickstart-jdbc-source",
+  "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+  "tasks.max": 1,
+  "connection.url": "jdbc:postgresql://postgres:5432/MainDatabase?user=postgres&password=postgres",
+  "mode": "incrementing",
+  "incrementing.column.name": "id",
+  "timestamp.column.name": "modified",
+  "topic.prefix": "quickstart-jdbc-",
+  "poll.interval.ms": 1000
+}

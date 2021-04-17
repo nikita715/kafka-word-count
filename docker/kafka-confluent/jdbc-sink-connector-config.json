@@ -1,0 +1,7 @@
+{
+  "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+  "table.name.format": "test-sink",
+  "topics": "quickstart-jdbc-test",
+  "name": "quickstart-jdbc-sink",
+  "connection.url": "jdbc:postgresql://postgres:5432/MainDatabase?user=postgres&password=postgres"
+}
